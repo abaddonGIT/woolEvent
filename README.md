@@ -38,19 +38,15 @@ Small event emitter supporting the namespaces for any js object.
     Store.getItem();
     Store.getAll();
 ##Methods
-- **mix** - Extends the object using the following methods and variables:
- - **bind** - registration handlers for event:
-
-
-    Store.bind('change click', funtion () {
-        console.log('I start when object emit change or click event');
-    });
-    Store.bind('change:first', function () {
-        console.log('I start when object emit change:first event but not change event');
-    });
-    
- - **unbind** - unregistration handlers for event:
-
+- **mix** - Extends the object using the following methods and variables (bind, unbind, trigger, nextFnId, woolIndex, woolHandlers)
+- **bind** - registration handlers for event:
+        Store.bind('change click', funtion () {
+            console.log('I start when object emit change or click event');
+        });
+        Store.bind('change:first', function () {
+            console.log('I start when object emit change:first event but not change event');
+        });
+- **unbind** - unregistration handlers for event:
         Store.unbind('set', setHandler);
         Store.unbind('get', getHandler);
         Store.unbind('get:all', getAllHandler);
@@ -59,12 +55,11 @@ Small event emitter supporting the namespaces for any js object.
         Store.unbind('get');
         //Сan also be
         Store.unbind('set get');
- - **trigger** - emit need event:
-
+- **trigger** - emit need event:
         Store.trigger('set');
         Store.trigger('get');
         //Or
         Store.trigger('set get');
- - **nextFnId** - contains unic mark of next handler for object;
- - **woolIndex** - unic mark of object;
- - **woolHandlers** - contains handlers tree for object
+- **nextFnId** - contains unic mark of next handler for object;
+- **woolIndex** - unic mark of object;
+- **woolHandlers** - contains handlers tree for object
