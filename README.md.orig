@@ -1,0 +1,76 @@
+# woolEvent
+Small event emitter supporting the namespaces for any js object.
+- pure js
+- Any js object not browser doms
+- Support event namespace
+
+##How to install
+    npm install woolEvent
+##How to use
+    var WoolEvent = require('woolEvent'), wool = new WoolEvent();
+    var Store = {
+        setItem: function () {
+            this.trigger('set');
+        },
+        getItem: function () {
+            this.trigger('get');
+        },
+        getAll: function () {
+            this.trigger('get:all');
+        }
+    };
+    wool.mix(Store);
+    var setHandler = function () {
+            console.log('You set new element!');
+        },
+        getHandler = function () {
+            console.log('You get element from storage!');
+        },
+        getAllHandler = function () {
+            console.log('You get all elements from storage!');
+        }
+
+    Store.bind('set', setHandler);
+    Store.bind('get', getHandler);
+    Store.bind('get:all', getAllHandler);
+    
+    Store.setItem();
+    Store.getItem();
+    Store.getAll();
+##Methods
+- **mix** - Extends the object using the following methods and variables:
+ - **bind** - registration handlers for event:
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0de12fe422c4e8004a4e7d6e2a4155b9a3611668
+    Store.bind('change click', funtion () {
+        console.log('I start when object emit change or click event');
+    });
+    Store.bind('change:first', function () {
+        console.log('I start when object emit change:first event but not change event');
+    });
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 0de12fe422c4e8004a4e7d6e2a4155b9a3611668
+ - **unbind** - unregistration handlers for event:
+
+        Store.unbind('set', setHandler);
+        Store.unbind('get', getHandler);
+        Store.unbind('get:all', getAllHandler);
+        //If handler function undefined when be unregistration all event tree
+        Store.unbind('set');
+        Store.unbind('get');
+        //Сan also be
+        Store.unbind('set get');
+ - **trigger** - emit need event:
+
+        Store.trigger('set');
+        Store.trigger('get');
+        //Or
+        Store.trigger('set get');
+ - **nextFnId** - contains unic mark of next handler for object;
+ - **woolIndex** - unic mark of object;
+ - **woolHandlers** - contains handlers tree for object
