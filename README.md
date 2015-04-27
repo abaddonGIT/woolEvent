@@ -5,7 +5,7 @@ Small event emitter supporting the namespaces for any js object.
 - Support event namespace
 
 ##How to install
-    npm install woolEvent
+    npm install woolevent
 ##How to use
     var WoolEvent = require('woolEvent'), wool = new WoolEvent();
     var Store = {

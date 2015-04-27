@@ -1,5 +1,5 @@
 {
-  "name": "woolEvent",
+  "name": "woolevent",
   "version": "1.0.0",
   "description": "Small event emitter supporting the namespaces for any js object",
   "email": "abaddongit@gmail.com",
