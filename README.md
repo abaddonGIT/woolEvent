@@ -48,6 +48,7 @@ Small event emitter supporting the namespaces for any js object.
     Store.bind('change:first', function () {
         console.log('I start when object emit change:first event but not change event');
     });
+    
  - **unbind** - unregistration handlers for event:
 
         Store.unbind('set', setHandler);
