@@ -4,8 +4,6 @@
 var WoolEvent;
 (function (w, d) {
     "use strict";
-    var React = require('react');
-
     WoolEvent = function () {
         if (!(this instanceof WoolEvent)) {
             return new WoolEvent();

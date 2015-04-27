@@ -1,7 +1,7 @@
 /**
  * Created by Abaddon on 26.04.2015.
  */
-var React = require('react'), WoolEvent = require('../src/index.js');
+var WoolEvent = require('../src/index.js');
 
 (function (d, w) {
     d.addEventListener('DOMContentLoaded', function () {
@@ -17,6 +17,7 @@ var React = require('react'), WoolEvent = require('../src/index.js');
                     this.trigger('get:all');
                 }
             };
+
         wool.mix(Store);
 
         var setHandler = function () {
