@@ -49,6 +49,7 @@ Small event emitter supporting the namespaces for any js object.
         });
 
 - **unbind** - unregistration handlers for event:
+
         Store.unbind('set', setHandler);
         Store.unbind('get', getHandler);
         Store.unbind('get:all', getAllHandler);
@@ -57,11 +58,14 @@ Small event emitter supporting the namespaces for any js object.
         Store.unbind('get');
         //Сan also be
         Store.unbind('set get');
+        
 - **trigger** - emit need event:
+
         Store.trigger('set');
         Store.trigger('get');
         //Or
         Store.trigger('set get');
+        
 - **nextFnId** - contains unic mark of next handler for object;
 - **woolIndex** - unic mark of object;
 - **woolHandlers** - contains handlers tree for object
