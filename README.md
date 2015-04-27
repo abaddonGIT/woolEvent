@@ -40,12 +40,12 @@ Small event emitter supporting the namespaces for any js object.
 ##Methods
 - **mix** - Extends the object using the following methods and variables (bind, unbind, trigger, nextFnId, woolIndex, woolHandlers)
 - **bind** - registration handlers for event:
-        Store.bind('change click', funtion () {
-            console.log('I start when object emit change or click event');
-        });
-        Store.bind('change:first', function () {
-            console.log('I start when object emit change:first event but not change event');
-        });
+            Store.bind('change click', funtion () {
+                console.log('I start when object emit change or click event');
+            });
+            Store.bind('change:first', function () {
+                console.log('I start when object emit change:first event but not change event');
+            });
 - **unbind** - unregistration handlers for event:
         Store.unbind('set', setHandler);
         Store.unbind('get', getHandler);
