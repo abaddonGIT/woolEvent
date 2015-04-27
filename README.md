@@ -4,9 +4,11 @@ Small event emitter supporting the namespaces for any js object.
 - Any js object not browser doms
 - Support event namespace
 
-##How to install##
+## How to install ##
+
     npm install woolevent
-##How to use##
+    
+## How to use ##
     var WoolEvent = require('woolEvent'), wool = new WoolEvent();
     var Store = {
         setItem: function () {
@@ -37,7 +39,7 @@ Small event emitter supporting the namespaces for any js object.
     Store.setItem();
     Store.getItem();
     Store.getAll();
-##Methods##
+## Methods ##
 - **mix** - Extends the object using the following methods and variables (bind, unbind, trigger, nextFnId, woolIndex, woolHandlers)
 - **bind** - registration handlers for event:
 
