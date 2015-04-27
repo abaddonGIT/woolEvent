@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Small event emitter supporting the namespaces for any js object",
   "email": "abaddongit@gmail.com",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --colors true --hot",
     "deploy": "webpack --config webpack.config.deploy.js --display-modules"
