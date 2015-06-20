@@ -10,7 +10,9 @@ Small event emitter supporting the namespaces for any js object.
     
 ## How to use ##
 
-    var WoolEvent = require('woolEvent'), wool = new WoolEvent();
+    var WoolEvent = require('woolEvent'),
+        merge = require('object-assign');
+
     var Store = {
         setItem: function () {
             this.trigger('set');
@@ -22,7 +24,8 @@ Small event emitter supporting the namespaces for any js object.
             this.trigger('get:all');
         }
     };
-    wool.mix(Store);
+    merge(Store, WoolEvent.prototype);
+
     var setHandler = function () {
             console.log('You set new element!');
         },
@@ -42,7 +45,6 @@ Small event emitter supporting the namespaces for any js object.
     Store.getAll();
     
 ## Methods ##
-- **mix** - Extends the object using the following methods and variables (bind, unbind, trigger, nextFnId, woolIndex, woolHandlers)
 - **bind** - registration handlers for event:
 
         Store.bind('change click', funtion () {
@@ -71,5 +73,4 @@ Small event emitter supporting the namespaces for any js object.
         Store.trigger('set get');
         
 - **nextFnId** - contains unic mark of next handler for object;
-- **woolIndex** - unic mark of object;
 - **woolHandlers** - contains handlers tree for object

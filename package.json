@@ -1,6 +1,6 @@
 {
   "name": "woolevent",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": {
     "name": "Goryachkin Michael (Abaddon65)",
     "email": "abaddongit@gmail.com"
@@ -26,9 +26,11 @@
   },
   "devDependencies": {
     "path": ">=0.11.14",
+    "object-assign": "latest",
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
+    "object-assign": "latest",
     "webpack": ">=1.5.3"
   }
 }

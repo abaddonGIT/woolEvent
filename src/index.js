@@ -5,34 +5,18 @@ var WoolEvent;
 (function (w, d) {
     "use strict";
     WoolEvent = function () {
-        if (!(this instanceof WoolEvent)) {
-            return new WoolEvent();
-        }
-
-        this.woolIndex = 0;
-        this.woolHandlers = {};
-        this.nextFnId = 0;
-
-        this.mix = function (target) {
-            if (target.woolIndex) return;
-            var that = this, methods = ['bind', 'unbind', 'trigger', 'nextFnId', 'woolIndex', 'woolHandlers'], ln = methods.length, isF = this.isFunction(target);
-
-            while (ln--) {
-                if (isF) {
-                    target.prototype[methods[ln]] = that[methods[ln]];
-                } else {
-                    target[methods[ln]] = that[methods[ln]];
-                }
-            }
-            this.woolIndex++;
-        };
     };
 
     WoolEvent.prototype = {
+        woolHandlers: undefined,
+        nextFnId: 0,
         isFunction: function (obj) {
             return typeof obj === 'function';
         },
         bind: function (type, fn) {//register events
+
+            if (!this.woolHandlers) this.woolHandlers = {};
+
             var types = (type || "").match(/\S+/g) || [""], ln = types.length, handlers = this.woolHandlers;
             if (!ln) return;
 

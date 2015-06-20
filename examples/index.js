@@ -1,11 +1,11 @@
 /**
  * Created by Abaddon on 26.04.2015.
  */
-var WoolEvent = require('../src/index.js');
+var WoolEvent = require('../src/index.js'), merge = require('object-assign');
 
 (function (d, w) {
     d.addEventListener('DOMContentLoaded', function () {
-        var wool = new WoolEvent(), buttons = d.querySelectorAll('.action'),
+        var buttons = d.querySelectorAll('.action'),
             Store = {
                 setItem: function () {
                     this.trigger('set');
@@ -16,9 +16,10 @@ var WoolEvent = require('../src/index.js');
                 getAll: function () {
                     this.trigger('get:all');
                 }
-            };
+            }, Store2 = {};
 
-        wool.mix(Store);
+        merge(Store, WoolEvent.prototype);
+        merge(Store2, WoolEvent.prototype);
 
         var setHandler = function () {
             alert('You set new element!');
@@ -53,6 +54,7 @@ var WoolEvent = require('../src/index.js');
         Store.bind('get:all', getAllHandler);
 
         console.log(Store);
+        console.log(Store2);
 
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', clickHandler, false);
