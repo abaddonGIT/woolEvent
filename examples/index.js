@@ -14,7 +14,7 @@ var WoolEvent = require('../src/index.js'), merge = require('object-assign');
                     this.trigger('get');
                 },
                 getAll: function () {
-                    this.trigger('get:all');
+                    this.trigger('get:all', 'test');
                 }
             }, Store2 = {};
 
@@ -29,8 +29,8 @@ var WoolEvent = require('../src/index.js'), merge = require('object-assign');
             alert('You get element from storage!');
         };
 
-        var getAllHandler = function () {
-            alert('You get all elements from storage!');
+        var getAllHandler = function (test) {
+            alert(test);
         };
 
         var clickHandler = function (e) {

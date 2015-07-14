@@ -10,7 +10,7 @@ Small event emitter supporting the namespaces for any js object.
     
 ## How to use ##
 
-    var WoolEvent = require('woolEvent'),
+    var WoolEvent = require('woolevent'),
         merge = require('object-assign');
 
     var Store = {
