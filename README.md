@@ -83,7 +83,7 @@ Small event emitter supporting the namespaces for any js object.
 MIT, see [LICENSE][license-url] for details.
 
 [npm-image]: https://img.shields.io/npm/v/woolEvent.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/woolEvent
+[npm-url]: https://www.npmjs.com/package/woolevent
 [downloads-image]: http://img.shields.io/npm/dm/woolEvent.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/woolEvent
 [license-image]: http://img.shields.io/npm/l/woolEvent.svg?style=flat-square
