@@ -22,7 +22,8 @@ var webpackConfig = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.IgnorePlugin(/un~$/)
     ]
 };
 

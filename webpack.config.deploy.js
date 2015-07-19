@@ -7,11 +7,13 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: [
-        './src/',
+        './src/index.js',
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'index.js'
+        filename: './dist/index.js',
+        sourceMapFilename: './dist/index.map',
+        libraryTarget: 'umd',
+        library: 'WoolEvent'
     },
     plugins: [
         new webpack.optimize.DedupePlugin(),

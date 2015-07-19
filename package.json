@@ -21,7 +21,7 @@
   "description": "Small event emitter supporting the namespaces for any js object",
   "main": "./src/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --colors true --hot",
+    "watch": "./node_modules/.bin/webpack-dev-server",
     "deploy": "webpack --config webpack.config.deploy.js --display-modules"
   },
   "devDependencies": {
@@ -30,7 +30,6 @@
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
-    "object-assign": "latest",
     "webpack": ">=1.5.3"
   }
 }
