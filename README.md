@@ -4,6 +4,7 @@
 [![Downloads][downloads-image]][downloads-url]
 [![GitHub issues][git-issues]][git-issues-url]
 [![GitHub stars][git-stars-image]][git-stars-url]
+
 Small event emitter supporting the namespaces for any js object.
 - pure js
 - Any js object not browser doms
@@ -82,11 +83,11 @@ Small event emitter supporting the namespaces for any js object.
 
 MIT, see [LICENSE][license-url] for details.
 
-[npm-image]: https://img.shields.io/npm/v/woolEvent.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/woolevent.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/woolevent
-[downloads-image]: http://img.shields.io/npm/dm/woolEvent.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/woolEvent
-[license-image]: http://img.shields.io/npm/l/woolEvent.svg?style=flat-square
+[downloads-image]: http://img.shields.io/npm/dm/woolevent.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/woolevent
+[license-image]: http://img.shields.io/npm/l/woolevent.svg?style=flat-square
 [license-url]: LICENSE
 [git-issues]: https://img.shields.io/github/issues/abaddonGIT/woolEvent.svg
 [git-issues-url]: https://github.com/abaddonGIT/woolEvent/issues

@@ -1,6 +1,8 @@
 {
   "name": "woolevent",
   "version": "1.1.1",
+  "description": "Small event emitter supporting the namespaces for any js object",
+  "main": "./src/index.js",
   "author": {
     "name": "Goryachkin Michael (Abaddon65)",
     "email": "abaddongit@gmail.com"
@@ -10,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/abaddonGIT/woolEvent.git"
   },
+  "bugs": {
+    "url": "https://github.com/abaddonGIT/woolEvent/issues"
+  },
   "keywords": [
     "event",
     "emitter",
@@ -18,8 +23,6 @@
     "trigget"
   ],
   "homepage": "https://github.com/abaddonGIT/woolEvent",
-  "description": "Small event emitter supporting the namespaces for any js object",
-  "main": "./src/index.js",
   "scripts": {
     "watch": "./node_modules/.bin/webpack-dev-server",
     "deploy": "webpack --config webpack.config.deploy.js --display-modules"
