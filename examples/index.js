@@ -53,6 +53,8 @@ var WoolEvent = require('../src/index.js'), merge = require('object-assign');
         Store.bind('get', getHandler);
         Store.bind('get:all', getAllHandler);
 
+        Store.unbind('fdgdf');
+
         console.log(Store);
         console.log(Store2);
 
