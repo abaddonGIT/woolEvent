@@ -31,7 +31,8 @@
   "devDependencies": {
     "path": ">=0.11.14",
     "object-assign": "latest",
-    "webpack-dev-server": "^1.7.0"
+    "webpack-dev-server": "^1.7.0",
+    "jest-cli": "latest"
   },
   "dependencies": {
     "webpack": ">=1.5.3"
