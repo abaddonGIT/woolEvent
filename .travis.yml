@@ -1,5 +1,5 @@
 language: javascript
 node:
   - "0.12"
-before_script:
-  - sudo npm install jest-cli
+sudo: false
+after_script: "npm run test"
