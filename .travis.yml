@@ -4,3 +4,5 @@ node:
 sudo: false
 before_script: "npm install jest-cli"
 after_script: "npm run test"
+after_success:
+  - coveralls
