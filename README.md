@@ -4,6 +4,7 @@
 [![Downloads][downloads-image]][downloads-url]
 [![GitHub issues][git-issues]][git-issues-url]
 [![GitHub stars][git-stars-image]][git-stars-url]
+[![Build Status](https://travis-ci.org/abaddonGIT/woolEvent.svg?branch=master)](https://travis-ci.org/abaddonGIT/woolEvent)
 
 Small event emitter supporting the namespaces for any js object.
 - pure js
