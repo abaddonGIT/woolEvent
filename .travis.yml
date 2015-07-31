@@ -1,4 +1,4 @@
-language: javascript
+language: node_js
 node:
   - "0.12"
 sudo: false
